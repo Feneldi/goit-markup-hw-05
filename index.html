@@ -619,13 +619,12 @@
           </div>
 
           <!-- Контейнер №4 (textarea) -->
-          <div class="form-wrapper-cont">
-            <label class="form-label-person" for="form-person-comment"
-              >Comment</label
-            >
+          <div class="form-wrapper-cont-textarea">
+            <label class="form-label-person" for="user-comment">Comment</label>
             <textarea
               class="form-person-comment"
-              id="form-person-comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -633,13 +632,14 @@
           <!-- Чекбокс -->
           <div class="checkbox">
             <input
-              class="checkbox-stock"
+              class="checkbox-stock visually-hidden"
               type="checkbox"
-              name="checkbox-person"
-              id="form-person-checkbox"
+              name="user-privacy"
+              id="user-privacy"
               required
+              value="true"
             />
-            <label class="checkbox-text" for="form-person-checkbox"
+            <label class="checkbox-text" for="user-privacy"
               ><span class="checkbox-castom"
                 ><svg class="checkbox-castom-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span

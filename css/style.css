@@ -622,6 +622,10 @@ img {
   fill: #4d5ae5;
 }
 
+.form-wrapper-cont-textarea {
+  margin-bottom: 16px;
+}
+
 .form-person-comment {
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -629,16 +633,18 @@ img {
   width: 360px;
   height: 120px;
   outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(46, 47, 66, 0.4);
+  letter-spacing: 0.04em;
+  line-height: 1.17;
+  font-size: 12px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  background-color: transparent;
   padding: 8px 16px;
 }
 
 .form-person-comment::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
 }
 
 .form-person-comment:focus {
@@ -664,7 +670,7 @@ img {
   margin-bottom: 24px;
 }
 
-.checkbox-stock {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -682,6 +688,7 @@ img {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: transparent;
+  border: none;
 }
 
 .checkbox-castom {
@@ -695,6 +702,9 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-text {
@@ -727,6 +737,7 @@ img {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn-submit:focus,
