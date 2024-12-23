@@ -500,6 +500,8 @@ img {
   background-color: #31d0aa;
 }
 
+/* ---------- Футер форма ---------- */
+
 .footer-subscribe-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -538,9 +540,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-weight: 500;
-
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
@@ -714,19 +715,6 @@ img {
 
 /* ---------- Чекбокс ---------- */
 
-/* .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} */
-
 .checkbox {
   margin-bottom: 24px;
 }
@@ -765,14 +753,6 @@ img {
   border: none;
   fill: #f4f4fd;
 }
-
-/* .checkbox:checked + .checkbox-text .checkbox-castom {
-  border-radius: 2px;
-  background-color: #404bbf;
-  fill: #f4f4fd;
-  border: transparent;
-  border: none;
-} */
 
 .checkbox-text {
   font-weight: 400;
